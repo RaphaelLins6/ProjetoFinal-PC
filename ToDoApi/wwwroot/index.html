@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f4f4f4; }
+        h1 { text-align: center; }
+        #kanban {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .coluna {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 16px;
+            width: 300px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .coluna h2 {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .tarefas {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .card {
+            background: #e9ecef;
+            border-radius: 6px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 1px 4px #0001;
+        }
+        .card.done {
+            background: #d4edda;
+            text-decoration: line-through;
+            color: #888;
+        }
+        .circle {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #888;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: #fff;
+            transition: border 0.2s;
+        }
+        .circle.checked {
+            border: 2px solid #28a745;
+            background: #28a745;
+        }
+        .circle.checked::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .card button {
+            margin-left: auto;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .card button.move {
+            background: #ffc107;
+            color: #333;
+            margin-left: 8px;
+        }
+        .card button.delete {
+            background: #dc3545;
+            color: #fff;
+            margin-left: 8px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button[type="submit"] {
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            background: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <form id="form-tarefa">
+        <input type="text" id="descricao" placeholder="Nova tarefa..." required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <div id="kanban">
+        <div class="coluna" id="coluna-afazer">
+            <h2>A Fazer</h2>
+            <div class="tarefas" id="tarefas-afazer"></div>
+        </div>
+        <div class="coluna" id="coluna-progresso">
+            <h2>Em Progresso</h2>
+            <div class="tarefas" id="tarefas-progresso"></div>
+        </div>
+        <div class="coluna" id="coluna-concluido">
+            <h2>Concluído</h2>
+            <div class="tarefas" id="tarefas-concluido"></div>
+        </div>
+    </div>
+    <script>
+        const apiUrl = 'http://localhost:5083/api/tarefas';
+
+        function carregarTarefas() {
+            fetch(apiUrl)
+                .then(res => res.json())
+                .then(tarefas => {
+                    // Limpa as colunas
+                    document.getElementById('tarefas-afazer').innerHTML = '';
+                    document.getElementById('tarefas-progresso').innerHTML = '';
+                    document.getElementById('tarefas-concluido').innerHTML = '';
+
+                    tarefas.forEach(tarefa => {
+                        const card = document.createElement('div');
+                        card.className = 'card' + (tarefa.concluida ? ' done' : '');
+
+                        // Círculo para marcar como concluído
+                        const circle = document.createElement('div');
+                        circle.className = 'circle' + (tarefa.concluida ? ' checked' : '');
+                        circle.title = tarefa.concluida ? 'Desmarcar como concluída' : 'Marcar como concluída';
+                        circle.onclick = (e) => {
+                            e.stopPropagation();
+                            marcarConcluida(tarefa.id, !tarefa.concluida);
+                        };
+                        card.appendChild(circle);
+
+                        // Descrição
+                        const span = document.createElement('span');
+                        span.textContent = tarefa.descricao;
+                        card.appendChild(span);
+
+                        // Botões de mover
+                        if (!tarefa.concluida) {
+                            if (tarefa.status === 'afazer') {
+                                const btnProgresso = document.createElement('button');
+                                btnProgresso.textContent = '→';
+                                btnProgresso.className = 'move';
+                                btnProgresso.title = 'Mover para Em Progresso';
+                                btnProgresso.onclick = (e) => {
+                                    e.stopPropagation();
+                                    moverTarefa(tarefa.id, 'progresso');
+                                };
+                                card.appendChild(btnProgresso);
+                            } else if (tarefa.status === 'progresso') {
+                                const btnAfazer = document.createElement('button');
+                                btnAfazer.textContent = '←';
+                                btnAfazer.className = 'move';
+                                btnAfazer.title = 'Mover para A Fazer';
+                                btnAfazer.onclick = (e) => {
+                                    e.stopPropagation();
+                                    moverTarefa(tarefa.id, 'afazer');
+                                };
+                                card.appendChild(btnAfazer);
+                            }
+                        }
+
+                        // Botão deletar
+                        const btnDelete = document.createElement('button');
+                        btnDelete.textContent = 'Excluir';
+                        btnDelete.className = 'delete';
+                        btnDelete.onclick = (e) => {
+                            e.stopPropagation();
+                            deletarTarefa(tarefa.id);
+                        };
+                        card.appendChild(btnDelete);
+
+                        // Adiciona o card na coluna correta
+                        if (tarefa.concluida) {
+                            document.getElementById('tarefas-concluido').appendChild(card);
+                        } else if (tarefa.status === 'progresso') {
+                            document.getElementById('tarefas-progresso').appendChild(card);
+                        } else {
+                            document.getElementById('tarefas-afazer').appendChild(card);
+                        }
+                    });
+                });
+        }
+
+        function adicionarTarefa(descricao) {
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ descricao, status: 'afazer' })
+            }).then(carregarTarefas);
+        }
+
+        function marcarConcluida(id, concluida) {
+            fetch(`${apiUrl}/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ concluida })
+            }).then(carregarTarefas);
+        }
+
+        function moverTarefa(id, status) {
+            fetch(`${apiUrl}/${id}/mover`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ status })
+            }).then(carregarTarefas);
+        }
+
+        function deletarTarefa(id) {
+            fetch(`${apiUrl}/${id}`, {
+                method: 'DELETE'
+            }).then(carregarTarefas);
+        }
+
+        document.getElementById('form-tarefa').onsubmit = function(e) {
+            e.preventDefault();
+            const descricao = document.getElementById('descricao').value;
+            adicionarTarefa(descricao);
+            document.getElementById('descricao').value = '';
+        };
+
+        carregarTarefas();
+    </script>
+</body>
+</html>

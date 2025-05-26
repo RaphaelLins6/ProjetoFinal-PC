@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "TLPf/nvPrmnVJpaicPyvqd42f8CFUwhHGEfTFGe6x3M=",
+  "Source": "ToDoApi",
+  "BasePath": "_content/ToDoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ToDoApi\\wwwroot",
+      "Source": "ToDoApi",
+      "ContentRoot": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\vrr3wu93wd-cgisskbsgn.gz",
+      "SourceId": "ToDoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ToDoApi",
+      "RelativePath": "index#[.{fingerprint=cgisskbsgn}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8r7x1myfr2",
+      "Integrity": "hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\index.html",
+      "SourceId": "ToDoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cgisskbsgn",
+      "Integrity": "lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.cgisskbsgn.html",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\vrr3wu93wd-cgisskbsgn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000506842372"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cgisskbsgn"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg="
+        }
+      ]
+    },
+    {
+      "Route": "index.cgisskbsgn.html",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cgisskbsgn"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg="
+        }
+      ]
+    },
+    {
+      "Route": "index.cgisskbsgn.html.gz",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\vrr3wu93wd-cgisskbsgn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cgisskbsgn"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\vrr3wu93wd-cgisskbsgn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000506842372"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJcYb5Nk0gm1evDZydrXvWHvxRMYlqOAAjN/DMb1Wkg="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\rapha\\OneDrive\\Documentos\\Faculdade\\8° Semestre\\Prog. de comp\\ProjetoFinal\\ToDoApi\\obj\\Debug\\net9.0\\compressed\\vrr3wu93wd-cgisskbsgn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 20:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hD4kAYpN0p9LbOOzHsxp1qDRJjiuPRn12GLkE5qN9jA="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@ToDoApi_HostAddress = http://localhost:5083
+
+GET {{ToDoApi_HostAddress}}/index.html
+Accept: text/html
+
+###
