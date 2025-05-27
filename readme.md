@@ -1,93 +1,74 @@
-# 📋 Kanban To Do API
+# 🗂️ Kanban To Do API – Organização Visual de Tarefas
 
-Este projeto é uma aplicação ASP.NET Core Web API com um front-end HTML/CSS/JS simples para gerenciamento de tarefas no estilo **Kanban**.
-
----
-
-## 🖼️ Visão Geral Gráfica
-
-```
-┌───────────────────────────────┐
-│        Navegador Web          │
-│  (index.html em wwwroot)      │
-│                               │
-│  ┌───────────────┐            │
-│  │   Kanban      │            │
-│  │ ┌───────────┐ │            │
-│  │ │  A Fazer  │ │            │
-│  │ └───────────┘ │            │
-│  │ ┌───────────┐ │            │
-│  │ │ Em Prog.  │ │            │
-│  │ └───────────┘ │            │
-│  │ ┌───────────┐ │            │
-│  │ │Concluído  │ │            │
-│  │ └───────────┘ │            │
-│  └───────────────┘            │
-│         ▲   ▲   ▲             │
-│         │   │   │             │
-│   fetch/REST API requests     │
-└─────────┼─────────────────────┘
-          │
-          ▼
-┌───────────────────────────────┐
-│        ASP.NET Core API       │
-│    (Controllers/C# Models)    │
-│  - GET /api/tarefas           │
-│  - POST /api/tarefas          │
-│  - PUT /api/tarefas/{id}      │
-│  - PUT /api/tarefas/{id}/mover│
-│  - DELETE /api/tarefas/{id}   │
-└───────────────────────────────┘
-```
+Uma solução web para organizar tarefas no formato Kanban, desenvolvida como projeto da disciplina de Programação de Computadores. O sistema permite criar, mover, concluir e excluir tarefas de forma visual e intuitiva, integrando front-end leve com uma API robusta em ASP.NET Core.
 
 ---
 
-## 🚀 Como funciona
+## 💡 O Valor do Projeto
 
-- O usuário acessa `index.html` (interface Kanban) via navegador.
-- O front-end faz requisições REST para a API ASP.NET Core.
-- As tarefas são exibidas e manipuladas em três colunas: **A Fazer**, **Em Progresso** e **Concluído**.
-- Cada tarefa pode ser movida entre colunas, marcada como concluída (círculo verde) ou excluída (botão vermelho).
+O Kanban To Do API foi desenvolvido para aplicar, de forma prática, os principais conceitos da disciplina de Programação de Computadores, conforme a ementa:
+
+- **Introdução à lógica:** O sistema utiliza fundamentos de lógica para estruturar o fluxo das tarefas e suas transições entre estados.
+- **Introdução à programação:** Explora tipos de dados, operadores e expressões para manipulação das tarefas.
+- **Estrutura sequencial:** Implementa comandos de entrada e saída tanto no front-end (formulário e interface) quanto no back-end (API).
+- **Estrutura de decisão:** Utiliza comandos de decisão (if, switch) para tratar ações do usuário e regras de negócio, como mover tarefas ou marcar como concluídas.
+- **Estruturas de repetição:** Aplica laços para exibir listas de tarefas e processar ações em lote.
+- **Estrutura de dados composta:** Utiliza listas e objetos para armazenar e manipular as tarefas.
+
+Dessa forma, o projeto integra teoria e prática, proporcionando experiência real em lógica, programação estruturada e desenvolvimento web, alinhando-se diretamente aos objetivos da disciplina.
 
 ---
 
-## 🛠️ Principais Tecnologias
+## 🛠️ Ferramentas Utilizadas
 
-- **Back-end:** ASP.NET Core Web API
+- **Back-end:** ASP.NET Core Web API (C#)
 - **Front-end:** HTML, CSS, JavaScript (fetch API)
-- **Swagger:** Documentação automática da API
+- **Documentação:** Swagger
+- **IDE:** Visual Studio Code
+- **Versionamento:** Git e GitHub
 
 ---
 
-## 📂 Estrutura de Pastas
+## 🤝 Força da Equipe
 
-```
-ProjetoFinal/
-└── ToDoApi/
-    ├── Controllers/
-    │   └── TarefasController.cs
-    ├── Models/
-    │   └── Tarefa.cs
-    ├── wwwroot/
-    │   └── index.html
-    ├── Program.cs
-    └── ...
-```
+Turma de Ciência da Computação - UDF
+
+- @RaphaelLins6 - **Raphael Lins** (RGM: 27797660)
+- @jotape99 - **João Pedro** (RGM: 28167333)
+- @joaogkt - **João Gabriel** (RGM: 28017188)
 
 ---
 
-## 💡 Como usar
+## 👥 Contribuição de Cada Membro
 
-1. Execute a API com `dotnet run`.
+- **Raphael Lins:** Estruturação da API, criação dos controllers, endpoints REST e lógica de manipulação de tarefas.
+- **João Pedro:** Implementação da interface Kanban, estilização com CSS, lógica de interação no JavaScript.
+- **João Gabriel:** Testes de usabilidade, revisão do código, elaboração do README e documentação do projeto.
+
+---
+
+## 🎬 Demonstração Visual
+
+### Tela Kanban no Navegador
+
+![Exemplo Kanban](./ToDoApi/Video/ToDoApiVideo.mkv)
+
+> *Acesse, crie, mova e conclua tarefas facilmente!*
+
+---
+
+## 🚀 Como Usar
+
+1. Execute a API com `dotnet run` na pasta `ToDoApi`.
 2. Acesse [http://localhost:5083/index.html](http://localhost:5083/index.html) no navegador.
-3. Gerencie suas tarefas visualmente no Kanban!
+3. Gerencie suas tarefas visualmente no Kanban arrastando, marcando como concluídas ou excluindo.
 
 ---
 
-## ✨ Exemplo Visual
+## 📜 Licença
 
-![Exemplo Kanban](https://user-images.githubusercontent.com/25181517/236909406-7b2e2e6b-2e2b-4e8c-8e2e-5e8e2e2e2e2e.png)
+Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se livre para usar, modificar e compartilhar!
 
 ---
 
-> Projeto acadêmico para controle visual de tarefas com API REST e front-end leve.
+> Projeto acadêmico desenvolvido para a disciplina de Programação de Computadores – 8º Semestre.

@@ -35,4 +35,5 @@ C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoF
 C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\bin\Debug\net9.0\ToDoApi.staticwebassets.runtime.json
-C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\obj\Debug\net9.0\compressed\vrr3wu93wd-cgisskbsgn.gz
+C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\obj\Debug\net9.0\ToDoApi.sourcelink.json
+C:\Users\rapha\OneDrive\Documentos\Faculdade\8° Semestre\Prog. de comp\ProjetoFinal\ToDoApi\obj\Debug\net9.0\compressed\vrr3wu93wd-d42hkjm904.gz
