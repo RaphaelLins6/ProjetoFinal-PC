@@ -51,7 +51,7 @@ Turma de Ciência da Computação - UDF
 
 ### Tela Kanban no Navegador
 
-<video src="ToDoApi/Video/ToDoApiVideo.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/d7103961-f37c-43ab-91bc-ad877cd3ce94
 
 > *Acesse, crie, mova e conclua tarefas facilmente!*
 
