@@ -1,4 +1,4 @@
-# 🗂️ Kanban To Do API – Organização Visual de Tarefas
+# 🗂️ Lista de tarefas
 
 Uma solução web para organizar tarefas no formato Kanban, desenvolvida como projeto da disciplina de Programação de Computadores. O sistema permite criar, mover, concluir e excluir tarefas de forma visual e intuitiva, integrando front-end leve com uma API robusta em ASP.NET Core.
 
