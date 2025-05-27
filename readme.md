@@ -51,7 +51,7 @@ Turma de Ciência da Computação - UDF
 
 ### Tela Kanban no Navegador
 
-![Exemplo Kanban](./ToDoApi/Video/ToDoApiVideo.mkv)
+![Exemplo Kanban](ToDoApi\Video\ToDoApiVideo.mp4)
 
 > *Acesse, crie, mova e conclua tarefas facilmente!*
 
@@ -67,7 +67,10 @@ Turma de Ciência da Computação - UDF
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se livre para usar, modificar e compartilhar!
+Este projeto é distribuído sob a licença GNU General Public License v3.0 (GPLv3).  
+Você pode usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias deste software, desde que mantenha o aviso de copyright original e a licença incluídos.
+
+Para mais detalhes, consulte o arquivo [LICENSE](LICENSE).
 
 ---
 
