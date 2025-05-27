@@ -41,9 +41,9 @@ Turma de Ciência da Computação - UDF
 
 ## 👥 Contribuição de Cada Membro
 
-- **Raphael Lins:** Estruturação da API, criação dos controllers, endpoints REST e lógica de manipulação de tarefas.
+- **Raphael Lins:** Estruturação da API, criação dos controllers, endpoints REST e lógica de manipulação de tarefas, elaboração do README e documentação do projeto
 - **João Pedro:** Implementação da interface Kanban, estilização com CSS, lógica de interação no JavaScript.
-- **João Gabriel:** Testes de usabilidade, revisão do código, elaboração do README e documentação do projeto.
+- **João Gabriel:** Testes de usabilidade, revisão do código.
 
 ---
 
