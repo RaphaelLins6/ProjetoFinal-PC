@@ -33,9 +33,9 @@ Dessa forma, o projeto integra teoria e prática, proporcionando experiência re
 
 Turma de Ciência da Computação - UDF
 
-- @RaphaelLins6 - **Raphael Lins** (RGM: 27797660)
-- @jotape99 - **João Pedro** (RGM: 28167333)
-- @joaogkt - **João Gabriel** (RGM: 28017188)
+- [@RaphaelLins6](https://www.github.com/RaphaelLins6) - Raphael Lins (RGM:27797660)
+- [@jotape99](https://www.github.com/jotape99) - João Pedro (RGM:28167333)
+- [@joaogkt](https://www.github.com/joaogkt) - João Gabriel (RGM:28017188)
 
 ---
 
